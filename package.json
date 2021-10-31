@@ -1,5 +1,5 @@
 {
-  "name": "dt173g_moment4",
+  "name": "dt173g_moment5_educationapp",
   "version": "1.0.0",
   "description": "Moment 5 - Webbutveckling III DT173G",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frla1901/education.git"
+    "url": "git+https://github.com/frla1901/educationApp.git"
   },
   "keywords": [
     "sass",
@@ -29,9 +29,9 @@
   "author": "Frida Lazzari",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/frla1901/education/issues"
+    "url": "https://github.com/frla1901/educationApp/issues"
   },
-  "homepage": "https://github.com/frla1901/education#readme",
+  "homepage": "https://github.com/frla1901/educationApp#readme",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",

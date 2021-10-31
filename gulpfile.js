@@ -1,6 +1,6 @@
 /* 
 Min Gulp kod - Moment 5 DT173G Webbutveckling III
-Education
+EducationApp
 */
 
 

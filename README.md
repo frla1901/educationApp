@@ -23,10 +23,11 @@
 * möjlighet att uppdatera informationen om en kurs/post i listan.
 * möjlighet att radera kurs/post i listan.
 
-##### GRUND
-I steg 2 av moment 5 har jag använt gulp, npm paket, VSC samt VSC terminalen samt testkört i webbläsaren Chrome genom Browser-sync. 
+### GRUND
+I steg 2 av moment 5 har jag använt gulp och flera andra npm paket, VSC samt VSC terminalen samt testkört i webbläsaren Chrome genom Browser-sync. NPM versionen uppdaterades innan utveckling startade. Version 8.1.2. Information om resterande versioner finns i filen package.json 
 
-###### NPM paket / verktyg
+
+#### NPM paket / verktyg
 1. **gulp** - för automatisering.
 2. **gulp-concat** - för att slå ihop mina js-filer och css-filer.
 3. **gulp-terser** - för att minifirera mina js-filer.
