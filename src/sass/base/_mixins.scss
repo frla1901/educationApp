@@ -1,6 +1,6 @@
 // Mixins
 @mixin grid($cols, $mgn) {
-    float: left;
+    float:left;
     margin-right: $mgn;
     margin-left: $mgn;
 

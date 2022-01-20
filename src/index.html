@@ -12,7 +12,7 @@
     <meta name="keywords" content="">
 
     <meta name="author" content="Frida Lazzari">
-    <title>EducationApp | courses_api </title>
+    <title>Webbutveckling III | Moment 5 | EducationApp | courses_api </title>
 
     <!-- link to css file -->
     <link rel="stylesheet" href="/css/main.css" type="text/css">
@@ -34,6 +34,7 @@
                 <li><a href="https://naughty-wiles-808fae.netlify.app">Moment 2</a></li>
                 <li><a href="https://distracted-lewin-c869e8.netlify.app/">Moment 3</a></li>
                 <li><a href="https://sleepy-beaver-ca5bb0.netlify.app">Moment 4</a></li>
+                <li><a href="#">Moment 5</a></li>
 
                 <!-- function in date.js -->
                 <p id="date" class="date"></p>
@@ -41,28 +42,39 @@
         </nav>
     </header>
     <section class="container">
-        <h1>Moment 4</h1>
+        <h1>Moment 5</h1>
         <article class="wrapper">
-            <h2>Ecmascript & Typescript </h2>
-            <p>Initialt utvecklades skriptspråket JavaScript (JS) med syftet att hantera program på webbsidor i webbläsaren Netscape Navigator. Snart efter lanseringen 1995 tillkännagavs att den ideella organisationen Ecma International skulle påbörja arbete med att skapa en standardiserad specifikation för JS. Syftet med detta var att definiera och därmed beskriva hur JS ska användas och fungera så att olika programvaror som stödjer JS följer samma standard. Resultatet blev Ecmascript (ES) som lanserades i sin första version - ES1 i juni 1997.Sedan lanseringen har flertalet justeringar/uppdateringar och versioner lanserats och när denna webbplats skapades var ES12 av ECMA-262 den senaste versionen.</p>
-            <br>
-            <br>
-            <p>TypeScript är ett programmeringsspråk baserad på öppen källkod som är utvecklat av Microsoft, med start 2012. Det är ett ”superset” till JavaScript, med extra funktioner som
-                exempel vis statisk typning. Typescript är utvecklat för att vara anpassat till utveckling av större komplexa
-                webbapplikationer. Transpileras innan körning till JavaScript. Fullt stöd ibland annat Visual Studio IDE och Visual Studio Code. Används i många större ramverk, som exempelvis Angular</p>
+            <h2>REST-webbtjänster med PHP</h2>
+            <p>Detta moment är 2 delat. Jag har först skapat en REST-webbtjänst <b><a href="https://www.frida360.se/courses-api/api">courses_api</a></b> som jag sedan konsumerar i denna fristående publika webbapplikationen <b>educationApp</b>.</p> 
         </article>
+        <article class="app-wrapper">
+            <h3>Dessa kurser har jag läst:</h3>
+            <div>
+                
+            </div>
+        <h3>Lägg till en kurs</h3>
+        <form>
+            <label for="courseCode">Kurskod:</label>
+            <br>
+            <input type="text" name="courseCode" id="courseCode" placeholder="AB123C">
+            <br>
+            <label for="courseName">Kursnamn:</label>
+            <br>
+            <input type="text" name="courseName" id="courseName" placeholder="Ett namn">
+            <br>
+            <label for="progression">Progression</label>
+            <br>
+            <input type="text" name="progression" id="progression" placeholder="A">
+            <br>
+            <label for="courseSyllabus">Kursplan:</label>
+            <br>
+            <input type="url" name="courseSyllabus" id="courseSyllabus" placeholder="https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=11111">
+            <br>
+            <br>
+            <input type="submit" value="Lägg till kurs" id="addCourse"> 
+        </form>
+    </article>
 
-        <article class="list-wrapper">
-            <h2>Moment i kursen Webb III</h2>
-            <ol>
-                <li>Versionshantering & Git</li>
-                <li>NodeJs och Gulp</li>
-                <li>CSS-preprocessorer och SASS</li>
-                <li>Ecmascript och Typescript</li>
-                <li>REST-webbtjänster med PHP</li>
-                <li>Projekt</li>
-            </ol>
-        </article>
         <article class="img-wrapper">
             <picture>
                 <img src="images/Git-Icon-Black.png" alt="Git logo" id="git">
@@ -75,12 +87,12 @@
     </section>
     <footer class="footer-wrapper">
         <ul>
-            <li>Skapad av Frida Lazzari september 2021</li>
+            <li>Skapad av Frida Lazzari januari 2021</li>
             <br>
             <li>Kontakta mig:</li>
             <li><a href="mailto:frla1901@student.miun.se">frla1901@student.miun.se</a></li>
             <!-- functionen in button.js file -->
-            <li><button onclick="buttonFunction()">Mitt gitHub Repo</button></li>
+            <li><button onclick="buttonFunction()">gitHub Repo del 1</button><button onclick="buttonFunction2()">gitHub Repo del 2</button></li>
         </ul>
     </footer>
     <!-- link to my js file -->

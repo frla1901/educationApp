@@ -4,7 +4,7 @@
 $grid_bp_md: 768; //used for smaller screens
 
 // Mixin - grid
-@media screen and (max-width: $grid_bp_md * 1px) {
+@media screen and (max-width: ($grid_bp_md * 1px)) {
     .wrapper p {
         @include grid(1, 5%);
     }
@@ -13,13 +13,22 @@ $grid_bp_md: 768; //used for smaller screens
     }
 }
 // Selector inheritance - @mixin grid
-@media screen and (min-width: ($grid_bp_md * 1px) + 1px) {
-    .wrapper p {
-        @include grid(3, 7%);
+@media screen and (min-width: (($grid_bp_md * 1px) + 1px)) {
+    .app-wrapper {
+        @include grid(2, 10%);
     }
+    p {
+        width: 100%;
+    }
+    .wrapper,
+    .intro-wrapper,
     .list-wrapper,
     .img-wrapper,
     .footer-wrapper {
-        @include grid(1, 7%);
+        @include grid(1, 10%);
+    }
+
+    p {
+        width: 80%;
     }
 }
