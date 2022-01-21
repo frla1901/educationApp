@@ -45,13 +45,27 @@
         <h1>Moment 5</h1>
         <article class="wrapper">
             <h2>REST-webbtjänster med PHP</h2>
-            <p>Detta moment är 2 delat. Jag har först skapat en REST-webbtjänst <b><a href="https://www.frida360.se/courses-api/api">courses_api</a></b> som jag sedan konsumerar i denna fristående publika webbapplikationen <b>educationApp</b>.</p> 
+            <p>Detta moment är 2 delat. Jag har först skapat en REST-webbtjänst <b><a href="https://www.frida360.se/courses-api/api">courses_api</a></b> som jag sedan konsumerar. <br>Nedan finns min fristående publika webbapplikation: <b><i>educationApp</i></b>.</p> 
         </article>
+        <!-- Start position for the eductionApp -->
         <article class="app-wrapper">
             <h3>Dessa kurser har jag läst:</h3>
-            <div>
-                
-            </div>
+            <!-- Empty div to be used by the functions in table.js - fetching the courses_api-->
+            <table>
+                <thead>
+                    <tr>
+                    <td><b>Kursnamn:</b></td>
+                    <td><b>Kurskod</b></td>   
+                    <td><b>Progression:</b></td>
+                    <td><b>Kursplan:</b></td>
+                    <td>Uppdatera</td>
+                    <td>Radera</td>
+                    </tr>
+                    </thead>
+                    <tbody id="courses">
+                    </tbody>  
+            </table>
+        <!-- Form to be used for adding new course functions in form.js -->
         <h3>Lägg till en kurs</h3>
         <form>
             <label for="courseCode">Kurskod:</label>

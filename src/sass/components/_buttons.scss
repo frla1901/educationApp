@@ -1,5 +1,6 @@
-// button styling using variables
-button {
+// button styling using variables 
+button, 
+input[type=submit]{
     color: $color-navs;
     background-color: $bg-color-header;
     border: $border;
@@ -14,4 +15,22 @@ button:hover {
     color: $color-hover;
     border: $border-hover;
     text-decoration: underline;
+}
+
+.delete {
+    color: $color-navs;
+    border: $color-navs;
+    border-radius: $border-rad;
+    background-color: $color-hover;
+    font-family: $font-special;
+    font-size: $font-xs;
+    margin: $margin;
+    padding: $padding;
+}
+
+.delete:hover {
+    color: $color-hover;
+    background-color: $bg-color-header;
+    text-decoration: underline;
+
 }

@@ -14,21 +14,10 @@ $grid_bp_md: 768; //used for smaller screens
 }
 // Selector inheritance - @mixin grid
 @media screen and (min-width: (($grid_bp_md * 1px) + 1px)) {
-    .app-wrapper {
-        @include grid(2, 10%);
-    }
-    p {
-        width: 100%;
-    }
     .wrapper,
-    .intro-wrapper,
-    .list-wrapper,
-    .img-wrapper,
-    .footer-wrapper {
-        @include grid(1, 10%);
-    }
-
-    p {
-        width: 80%;
+    .footer-wrapper 
+    .app-wrapper,
+    .img-wrapper {
+        @include grid(1, 7%);
     }
 }

@@ -1,0 +1,31 @@
+// form styling
+form {
+    color: $color-navs;
+    background-color: $bg-color-header;
+    border: $border;
+    border-radius: $border-rad;
+    font-family: $font-special;
+    font-size: $font-xs;
+    margin: $margin;
+    padding: $padding;
+}
+
+label {
+    color: $color-navs;
+    font-family: $font-special;
+    font-size: $font-xs;
+    margin: $margin;
+    //padding: $padding;
+}
+
+input {
+    min-width: 400px;
+    color: $color;
+    background-color: $bg-color;
+    border: $border;
+    border-radius: $border-rad;
+    font-family: $font-special;
+    font-size: $font-xs;
+    margin: $margin;
+    padding: $padding;
+}

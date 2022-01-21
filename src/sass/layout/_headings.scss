@@ -15,6 +15,7 @@ h2 {
     @extend h1;
     font-size: $font-l;
     padding-bottom: $padding;
+    text-align: left;
 }
 h3 {
     @extend h1;
