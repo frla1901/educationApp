@@ -3,7 +3,8 @@
 // nesting
 footer {
     margin: $margin;
-    border-top: 5px solid $color-links;
+    border-top: $border-fat;
+    
     ul {
         list-style: none;
         padding-top: $padding;

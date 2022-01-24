@@ -18,7 +18,7 @@ function getCourses() {
             <td>${course.courseName}</td>  
             <td>${course.courseCode}</td>
             <td>${course.progression}</td>
-            <td><a href ="${course.courseSyllabus}"> Länk </a></td>
+            <td><a href ="${course.courseSyllabus}"> Läs mer </a></td>
             <td><button class="delete" id="${course.id}" onClick="deleteCourse(${course.id})">Radera kurs
             </button></td>
             </tr>`;

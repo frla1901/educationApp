@@ -27,49 +27,38 @@
     <header>
         <nav>
             <ul>
-                <li><a href="https://www.miun.se/utbildning/program/data-och-it/webbutveckling/om-programmet/">TWEUG</a>
-                </li>
+                <li><a href="https://www.miun.se/utbildning/program/data-och-it/webbutveckling/om-programmet/">TWEUG</a></li>
                 <li><a href="https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=22706">Webb III</a></li>
                 <li><a href="https://frla1901.github.io/dt173g_moment1/">Moment 1</a></li>
                 <li><a href="https://naughty-wiles-808fae.netlify.app">Moment 2</a></li>
                 <li><a href="https://distracted-lewin-c869e8.netlify.app/">Moment 3</a></li>
                 <li><a href="https://sleepy-beaver-ca5bb0.netlify.app">Moment 4</a></li>
                 <li><a href="https://www.frida360.se/educationApp/">Moment 5</a></li>
-
-                <!-- function in date.js -->
-                <p id="date" class="date"></p>
             </ul>
         </nav>
     </header>
     <section class="container">
         <h1>Moment 5</h1>
-        <article class="wrapper">
             <h2>REST-webbtjänster med PHP</h2>
-            <p>Detta moment är 2 delat. Jag har först skapat en REST-webbtjänst <b><a
-                        href="https://www.frida360.se/courses-api/api">courses_api</a></b> som jag sedan konsumerar.</p>
-            <p>Nedan finns min fristående publika webbapplikation: <b><i>educationApp</i></b>.</p>
-        </article>
-        <br>
+            <p>Detta moment är 2 delat. Jag har först skapat en REST-webbtjänst <b><a href="https://www.frida360.se/courses-api/api">courses-api</a></b> som jag sedan konsumerar.
+            Nedan finns min fristående publika webbapplikation: <b><i>educationApp</i></b>.</p>
         <!-- Start position for the eductionApp -->
-        <article class="table-wrapper">
-            <h2>Dessa kurser har jag läst:</h2>
-            <!-- Table headings stated for all courses -->
-            <table>
-                <thead>
-                    <tr>
-                        <td><b>Kursnamn:</b></td>
-                        <td><b>Kurskod</b></td>
-                        <td><b>Progression:</b></td>
-                        <td><b>Kursplan:</b></td>
-                        <td></td>
-                    </tr>
-                </thead>
-                <!-- Empty table body to be used by the functions in table.js - fetching the courses_api -->
-                <tbody id="courses">
-                </tbody>
-            </table>
-        </article>
-        <article class="form-wrapper">
+        <h3>Mina kurser</h3>
+        <!-- Table with header for all courses -->
+        <table>
+            <thead>
+                <tr>
+                    <th><b>Kursnamn:</b></th>
+                    <th><b>Kurskod</b></th>
+                    <th><b>Progression:</b></th>
+                    <th><b>Kursplan</b></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <!-- Empty table body to be used by the functions in table.js - fetching the courses_api -->
+            <tbody id="courses">
+            </tbody>
+        </table>
             <!-- Form to be used for adding new course functions in form.js -->
             <form>
                 <h3>Lägg till en kurs</h3>
@@ -92,20 +81,19 @@
                 <br>
                 <br>
                 <input type="submit" value="Lägg till kurs" id="addCourse">
-        </form>
-        <picture>
-            <img src="images/Git-Icon-Black.png" alt="Git logo" id="git">
-            <img src="images/gulp-2x.png" alt="Git logo" id="gulp">
-            <img src="images/Sass-Logo---Seal-(Color).png" alt="SASS logo" id="sass">
-            <img src="images/ts-logo-512.png" alt="Typescript logo" id="typescript">
-            <img src="images/rest.png" alt="Restfulapi logo" id="rest">
-        </picture>
-        </article>
+            </form>
+            <!-- End position for the eductionApp -->
+            <picture><img src="images/Git-Icon-Black.png" alt="Git logo" id="git"></picture>
+            <picture><img src="images/gulp-2x.png" alt="Git logo" id="gulp"></picture>
+            <picture><img src="images/Sass-Logo---Seal-(Color).png" alt="SASS logo" id="sass"></picture>
+            <picture><img src="images/ts-logo-512.png" alt="Typescript logo" id="typescript"></picture>
+            <picture><img src="images/rest.png" alt="Restfulapi logo" id="rest"></picture>
+            <!-- function in date.js -->
+            <p id="date" class="date"></p>
     </section>
     <footer class="footer-wrapper">
         <ul>
             <li>Skapad av Frida Lazzari januari 2021</li>
-            <br>
             <li>Kontakta mig:</li>
             <li><a href="mailto:frla1901@student.miun.se">frla1901@student.miun.se</a></li>
             <!-- functionen in button.js file -->

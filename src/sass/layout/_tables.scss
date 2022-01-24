@@ -1,19 +1,10 @@
 // table styling
 
 table {
-    margin: $margin;
-    padding: $padding;
-}
-thead td {
-    padding-left: $padding-text;
-    font-size: $font-s;
+    max-width: 100%;
 }
 
-tbody td {
-    border: $border-hover;
-    padding-left: $padding-text;
-    font-size: $font-xs;
-}
+
 
 
 

@@ -3,26 +3,71 @@
 //Setting the width of the grid
 $grid_bp_md: 768; //used for smaller screens
 
-// Mixin - grid
+// Mixin - grid - smaller screens
 @media screen and (max-width: ($grid_bp_md * 1px)) {
-    .wrapper p,
-    .table-wrapper table {
-        @include grid(1, 0);
-    }
-
-}
-// Selector inheritance - @mixin grid
-@media screen and (min-width: (($grid_bp_md * 1px) + 1px)) {
-    .wrapper p,
-    .table-wrapper table,
+    .container,
     .footer-wrapper {
         @include grid(1, 0);
     }
-    .form-wrapper form {
-        @include grid(2, 8%);
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr  {
+        display: block;
+        text-align: center;
     }
-    p,
-    table {
-        width: 80%;
+
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    tbody td {
+        font-size: $font-xs;
+        padding-bottom: $padding-text;
+    }
+
+    tr {
+        border-bottom: $border-hover;
+        padding: $padding-heading;    
+    }
+
+    form {
+        max-width: 100%;
+    }
+    img {
+        max-width: 16vh;
+        max-height: 16vh;
+    }
+
+}
+// Selector inheritance - @mixin grid larger screens
+@media screen and (min-width: (($grid_bp_md * 1px) + 1px)) {
+    table,
+    .footer-wrapper {
+        @include grid(1, 0);
+    }
+
+    .date {
+        max-width: 100%;
+    }
+    thead th {
+        padding-left: $padding-text;
+        font-size: $font-s;
+        text-align: left;
+    }
+    
+    tbody td {
+        border-bottom: $border-hover;
+        padding-left: $padding-text;
+        font-size: $font-xs;
+    }
+    form {
+        @include grid(2, 8%);
     }
 }

@@ -8,21 +8,21 @@ body {
     margin: $margin;
 
     .date {
-        text-align: center;
         text-transform: uppercase;
-        font-size: $font-m;
-        padding-top: $padding;
+        font-size: $font-s;
+        text-align: center;
 
         // if - else if - else
         $day: Fredag;
         @if $day == Fredag {
-            color: $color-navs;
+            color: $color;
         } @else if $day == Torsdag {
             color: rgb(64, 64, 64);
         } @else {
             color: rgb(128, 128, 128);
         }
     }
+
     ol,
     ul {
         margin: $margin;
@@ -32,6 +32,7 @@ body {
     li {
         font-size: $font-s;
         padding-bottom: $padding-text;
+        text-align:center;
     }
 
     .container {

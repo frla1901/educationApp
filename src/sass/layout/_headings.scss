@@ -3,18 +3,14 @@ h1 {
     font-family: $font-headings;
     color: $color-headings;
     padding-top:$padding-heading;
-    padding-bottom: $padding-text;
+    padding-bottom: $padding-heading;
     text-align: center;
-}
-// Selector inheritance - h1 above
-h1 {
-    @extend h1;
     font-size: $font-xl;
 }
+// Selector inheritance - h1 above
 h2 {
     @extend h1;
     font-size: $font-l;
-    padding-bottom: $padding;
 }
 h3 {
     @extend h1;
@@ -32,3 +28,4 @@ h6 {
     @extend h1;
     font-size: $font-xxs;
 }
+

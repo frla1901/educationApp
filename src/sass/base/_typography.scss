@@ -27,12 +27,15 @@ $bg-color-header: #d06297;
 
 // margin and padding
 $margin: 2.5%;
+$margin-headings: 5rem;
 $margin-text: 0.5% 2.5%;
 $padding: 2rem;
-$padding-heading:3rem;
+$padding-heading: 5rem;
 $padding-text: 1rem;
 
 // border
 $border: 0.2rem solid $color-navs;
 $border-hover: 0.2rem solid darken(#d06297, 50);
+$border-fat: 5px solid $color-links;
+$border-special: 0.2rem solid #d06297;
 $border-rad: 0.5rem;
