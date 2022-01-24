@@ -2,7 +2,7 @@
 h1 {
     font-family: $font-headings;
     color: $color-headings;
-    padding-top: $padding;
+    padding-top:$padding-heading;
     padding-bottom: $padding-text;
     text-align: center;
 }
@@ -15,7 +15,6 @@ h2 {
     @extend h1;
     font-size: $font-l;
     padding-bottom: $padding;
-    text-align: left;
 }
 h3 {
     @extend h1;

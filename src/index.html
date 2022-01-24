@@ -34,7 +34,7 @@
                 <li><a href="https://naughty-wiles-808fae.netlify.app">Moment 2</a></li>
                 <li><a href="https://distracted-lewin-c869e8.netlify.app/">Moment 3</a></li>
                 <li><a href="https://sleepy-beaver-ca5bb0.netlify.app">Moment 4</a></li>
-                <li><a href="#">Moment 5</a></li>
+                <li><a href="https://www.frida360.se/educationApp/">Moment 5</a></li>
 
                 <!-- function in date.js -->
                 <p id="date" class="date"></p>
@@ -45,58 +45,61 @@
         <h1>Moment 5</h1>
         <article class="wrapper">
             <h2>REST-webbtjänster med PHP</h2>
-            <p>Detta moment är 2 delat. Jag har först skapat en REST-webbtjänst <b><a href="https://www.frida360.se/courses-api/api">courses_api</a></b> som jag sedan konsumerar. <br>Nedan finns min fristående publika webbapplikation: <b><i>educationApp</i></b>.</p> 
+            <p>Detta moment är 2 delat. Jag har först skapat en REST-webbtjänst <b><a
+                        href="https://www.frida360.se/courses-api/api">courses_api</a></b> som jag sedan konsumerar.</p>
+            <p>Nedan finns min fristående publika webbapplikation: <b><i>educationApp</i></b>.</p>
         </article>
+        <br>
         <!-- Start position for the eductionApp -->
-        <article class="app-wrapper">
-            <h3>Dessa kurser har jag läst:</h3>
-            <!-- Empty div to be used by the functions in table.js - fetching the courses_api-->
+        <article class="table-wrapper">
+            <h2>Dessa kurser har jag läst:</h2>
+            <!-- Table headings stated for all courses -->
             <table>
                 <thead>
                     <tr>
-                    <td><b>Kursnamn:</b></td>
-                    <td><b>Kurskod</b></td>   
-                    <td><b>Progression:</b></td>
-                    <td><b>Kursplan:</b></td>
-                    <td>Uppdatera</td>
-                    <td>Radera</td>
+                        <td><b>Kursnamn:</b></td>
+                        <td><b>Kurskod</b></td>
+                        <td><b>Progression:</b></td>
+                        <td><b>Kursplan:</b></td>
+                        <td></td>
                     </tr>
-                    </thead>
-                    <tbody id="courses">
-                    </tbody>  
+                </thead>
+                <!-- Empty table body to be used by the functions in table.js - fetching the courses_api -->
+                <tbody id="courses">
+                </tbody>
             </table>
-        <!-- Form to be used for adding new course functions in form.js -->
-        <h3>Lägg till en kurs</h3>
-        <form>
-            <label for="courseCode">Kurskod:</label>
-            <br>
-            <input type="text" name="courseCode" id="courseCode" placeholder="AB123C">
-            <br>
-            <label for="courseName">Kursnamn:</label>
-            <br>
-            <input type="text" name="courseName" id="courseName" placeholder="Ett namn">
-            <br>
-            <label for="progression">Progression</label>
-            <br>
-            <input type="text" name="progression" id="progression" placeholder="A">
-            <br>
-            <label for="courseSyllabus">Kursplan:</label>
-            <br>
-            <input type="url" name="courseSyllabus" id="courseSyllabus" placeholder="https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=11111">
-            <br>
-            <br>
-            <input type="submit" value="Lägg till kurs" id="addCourse"> 
+        </article>
+        <article class="form-wrapper">
+            <!-- Form to be used for adding new course functions in form.js -->
+            <form>
+                <h3>Lägg till en kurs</h3>
+                <label for="courseCode">Kurskod:</label>
+                <br>
+                <input type="text" name="courseCode" id="courseCode" placeholder="AB123C">
+                <br>
+                <label for="courseName">Kursnamn:</label>
+                <br>
+                <input type="text" name="courseName" id="courseName" placeholder="Ett namn">
+                <br>
+                <label for="progression">Progression</label>
+                <br>
+                <input type="text" name="progression" id="progression" placeholder="A">
+                <br>
+                <label for="courseSyllabus">Kursplan:</label>
+                <br>
+                <input type="url" name="courseSyllabus" id="courseSyllabus"
+                    placeholder="https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=11111">
+                <br>
+                <br>
+                <input type="submit" value="Lägg till kurs" id="addCourse">
         </form>
-    </article>
-
-        <article class="img-wrapper">
-            <picture>
-                <img src="images/Git-Icon-Black.png" alt="Git logo" id="git">
-                <img src="images/gulp-2x.png" alt="Git logo" id="gulp">
-                <img src="images/Sass-Logo---Seal-(Color).png" alt="SASS logo" id="sass">
-                <img src="images/ts-logo-512.png" alt="Typescript logo" id="typescript">
-                <img src="images/rest.png" alt="Restfulapi logo" id="rest">
-            </picture>
+        <picture>
+            <img src="images/Git-Icon-Black.png" alt="Git logo" id="git">
+            <img src="images/gulp-2x.png" alt="Git logo" id="gulp">
+            <img src="images/Sass-Logo---Seal-(Color).png" alt="SASS logo" id="sass">
+            <img src="images/ts-logo-512.png" alt="Typescript logo" id="typescript">
+            <img src="images/rest.png" alt="Restfulapi logo" id="rest">
+        </picture>
         </article>
     </section>
     <footer class="footer-wrapper">
@@ -106,7 +109,8 @@
             <li>Kontakta mig:</li>
             <li><a href="mailto:frla1901@student.miun.se">frla1901@student.miun.se</a></li>
             <!-- functionen in button.js file -->
-            <li><button onclick="buttonFunction()">gitHub Repo del 1</button><button onclick="buttonFunction2()">gitHub Repo del 2</button></li>
+            <li><button onclick="buttonFunction()">gitHub Repo del 1</button><button onclick="buttonFunction2()">gitHub
+                    Repo del 2</button></li>
         </ul>
     </footer>
     <!-- link to my js file -->

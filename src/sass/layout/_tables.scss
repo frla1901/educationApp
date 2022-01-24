@@ -1,10 +1,21 @@
 // table styling
 
 table {
-    width:100%;
-    border: $border-hover;
+    margin: $margin;
+    padding: $padding;
 }
-
-thead td{
+thead td {
+    padding-left: $padding-text;
     font-size: $font-s;
 }
+
+tbody td {
+    border: $border-hover;
+    padding-left: $padding-text;
+    font-size: $font-xs;
+}
+
+
+
+
+

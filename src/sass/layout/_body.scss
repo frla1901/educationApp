@@ -23,14 +23,17 @@ body {
             color: rgb(128, 128, 128);
         }
     }
-    ol {
+    ol,
+    ul {
         margin: $margin;
     }
 
     p,
     li {
         font-size: $font-s;
+        padding-bottom: $padding-text;
     }
+
     .container {
         margin: $margin;
     }

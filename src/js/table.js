@@ -19,9 +19,7 @@ function getCourses() {
             <td>${course.courseCode}</td>
             <td>${course.progression}</td>
             <td><a href ="${course.courseSyllabus}"> Länk </a></td>
-            <td><button class="update" id="${course.id}" onClick="updateCourse(${course.id})">Uppdatera kursen
-            </button></td>
-            <td><button class="delete" id="${course.id}" onClick="deleteCourse(${course.id})">Radera kursen
+            <td><button class="delete" id="${course.id}" onClick="deleteCourse(${course.id})">Radera kurs
             </button></td>
             </tr>`;
             });

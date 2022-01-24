@@ -1,8 +1,7 @@
 // form styling
 form {
-    color: $color-navs;
-    background-color: $bg-color-header;
-    border: $border;
+    background-color: $bg-color;
+    border: $border-hover;
     border-radius: $border-rad;
     font-family: $font-special;
     font-size: $font-xs;
@@ -11,18 +10,17 @@ form {
 }
 
 label {
-    color: $color-navs;
+    color: $color-headings;
     font-family: $font-special;
     font-size: $font-xs;
     margin: $margin;
-    //padding: $padding;
 }
 
 input {
     min-width: 400px;
     color: $color;
     background-color: $bg-color;
-    border: $border;
+    border: $border-hover;
     border-radius: $border-rad;
     font-family: $font-special;
     font-size: $font-xs;

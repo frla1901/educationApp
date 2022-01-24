@@ -18,14 +18,12 @@ button:hover {
 }
 
 .delete {
-    color: $color-navs;
+    @extend button;
     border: $color-navs;
-    border-radius: $border-rad;
     background-color: $color-hover;
-    font-family: $font-special;
-    font-size: $font-xs;
-    margin: $margin;
-    padding: $padding;
+    font-size: $font-xxs;
+    margin: $margin-text;
+    padding: $padding-text;
 }
 
 .delete:hover {

@@ -1,6 +1,7 @@
 // images styling
 img {
-    margin: $margin-text;
-    max-width: 8vw;
-    max-height: 8vh;
+    margin: $margin;
+    padding: $padding;
+    max-width: 100%;
+    max-height: 18vh;
 }
