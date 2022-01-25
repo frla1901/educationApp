@@ -35,7 +35,7 @@ function taskHTML(){
     .pipe(dest('pub'));         // skicka vidare filerna till pub genom att använda metoden .pipe
 }
 
-// Ny Task 2 - SASS - funktion som kopierar/hämtar över alla scss-filer till publicering (pub)
+// Task 2 - SASS - funktion som kopierar/hämtar över alla scss-filer till publicering (pub)
 function taskSCSS(){
     return src(files.scssPath)                  // gulp metoden src = vilka sökvägar och därmed filer ska hämtas?
     .pipe(sourceMaps.init())                    // startar upp möjlighet att se källkodens ursprunglig plats (sökväg)
@@ -46,17 +46,6 @@ function taskSCSS(){
     .pipe(dest('pub/css'))                      // skicka vidare filerna till pub genom att använda metoden .pipe
     .pipe(browserSync.stream());                // hämtar scss/css förändringar 
 }
-
-// Tidigare Task 2 - CSS - funktion som kopierar/hämtar över alla css-filer till publicering (pub)
-/*function taskCSS(){
-    return src(files.cssPath)               // gulp metoden src = vilka sökvägar och därmed filer ska hämtas?
-    .pipe(sourceMaps.init())                // startar upp möjlighet att se källkodens ursprunglig plats (sökväg)
-    .pipe(concat('main.css'))               // slår ihop alla css-filerna till en main.css fil 
-    .pipe(cssnano())                        // minifierar alla css-filer
-    .pipe(sourceMaps.write('../maps'))      // skriver källkodens ursprunglig plats (sökväg)
-    .pipe(dest('pub/css'))                  // skicka vidare filerna till pub genom att använda metoden .pipe
-    .pipe(browserSync.stream());            // hämtar css förändringar 
-}*/
 
 // Task 3 - JS - funktion som kopierar/hämtar över alla js.filer till publicering (pub)
 function taskJS(){
